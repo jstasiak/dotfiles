@@ -1,0 +1,23 @@
+[user]
+    email = kuba.stasiak@gmail.com
+    name = Jakub Stasiak
+
+[alias]
+    st = status
+    ci = commit
+    lp = log -p
+    br = branch -a
+    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+    lc = log ORIG_HEAD.. --stat --no-merges
+    # from http://blog.kfish.org/2010/04/git-lola.html
+    lol = log --graph --decorate --pretty=oneline --abbrev-commit
+    lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+
+[color]
+    diff = auto
+    status = auto
+    branch = auto
+[core]
+    autocrlf = input
+[apply]
+    whitespace = nowarn
