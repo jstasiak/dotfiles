@@ -1,3 +1,6 @@
+set nocompatible
+call pathogen#infect()
+
 set softtabstop=4
 set tabstop=4
 
@@ -49,5 +52,4 @@ nmap <C-v> :call setreg("\"",system("xclip -o -selection clipboard"))<CR>p
 
 set visualbell
 
-call pathogen#infect()
 

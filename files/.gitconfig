@@ -19,5 +19,6 @@
     branch = auto
 [core]
     autocrlf = input
+    editor = vim
 [apply]
     whitespace = nowarn
