@@ -7,18 +7,24 @@
     ci = commit
     lp = log -p
     br = branch -a
-    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cd) %C(bold blue)<%an>%Creset' --abbrev-commit
     lc = log ORIG_HEAD.. --stat --no-merges
-    # from http://blog.kfish.org/2010/04/git-lola.html
-    lol = log --graph --decorate --pretty=oneline --abbrev-commit
-    lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+    ds = diff --staged
+
+[log]
+    date = iso
 
 [color]
     diff = auto
     status = auto
     branch = auto
+
+[format]
+    pretty = format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cd) %C(bold blue)<%an>%Creset'
+
 [core]
     autocrlf = input
     editor = vim
+
 [apply]
     whitespace = nowarn
