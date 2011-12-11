@@ -1,0 +1,10 @@
+defutf8 on
+defflow off
+autodetach on
+vbell off
+startup_message off
+nethack on
+altscreen on
+defscrollback 10000
+
+caption always "%{=b dK} %-w%{=b dG}%n %t%{-}%+w %-= %l %D %d %M %c "

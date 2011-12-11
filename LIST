@@ -1,3 +1,5 @@
 .gitconfig
-.vim
+.vim/
 .vimrc
+.zshrc
+.screenrc
