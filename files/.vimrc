@@ -91,5 +91,5 @@ nmap <C-v> :call setreg("\"",system("xclip -o -selection clipboard"))<CR>p
 set visualbell
 
 
-map <C-f> :NERDTreeToggle<CR>
+map <F10> :NERDTreeToggle<CR>
 

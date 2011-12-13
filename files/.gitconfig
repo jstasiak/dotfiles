@@ -8,8 +8,11 @@
     lp = log -p
     br = branch -a
     lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cd) %C(bold blue)<%an>%Creset' --abbrev-commit
+    lga = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cd) %C(bold blue)<%an>%Creset' --abbrev-commit --all
+    ll = log --graph --format=medium
     lc = log ORIG_HEAD.. --stat --no-merges
     ds = diff --staged
+    co = checkout
 
 [log]
     date = iso
