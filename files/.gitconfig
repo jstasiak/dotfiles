@@ -31,3 +31,9 @@
 
 [apply]
     whitespace = nowarn
+
+[branch]
+    autosetuprebase = always
+
+[rerere]
+    enabled = 1
