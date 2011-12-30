@@ -3,3 +3,5 @@
 .vimrc
 .zshrc
 .screenrc
+.pythonrc.py
+local/
