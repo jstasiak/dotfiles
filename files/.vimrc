@@ -15,7 +15,7 @@ set history=1000
 " automatic selection of tabs or spaces for indentation
 fu Select_expandtab()
     if search('^\t', 'n', 150)
-        set shiftwidth=8
+        set shiftwidth=4
         set noexpandtab
     el 
         set shiftwidth=4
