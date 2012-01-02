@@ -22,9 +22,6 @@
     status = auto
     branch = auto
 
-[format]
-    pretty = format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cd) %C(bold blue)<%an>%Creset'
-
 [core]
     autocrlf = input
     editor = vim
