@@ -25,6 +25,7 @@
 [core]
     autocrlf = input
     editor = vim
+    excludesfile = ~/.gitignore_global
 
 [apply]
     whitespace = nowarn
