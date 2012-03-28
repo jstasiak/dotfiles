@@ -29,7 +29,7 @@ def copy_files(files):
 
 def copy_file(file):
     home_file, local_file = full_paths(file)
-    if xists(local_file):
+    if exists(local_file):
         my_copy(local_file, home_file)
 
 def full_paths(file):
