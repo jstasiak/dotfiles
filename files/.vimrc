@@ -4,29 +4,23 @@ call pathogen#helptags()
 
 "allow to put buffer in the background without writing content to disk
 set hidden
-
-set softtabstop=4
-set tabstop=4
-
 set pastetoggle=<F2>
 set history=1000
 
-
-" automatic selection of tabs or spaces for indentation
-fu Select_expandtab()
-    if search('^\t', 'n', 150)
-        set shiftwidth=4
-        set noexpandtab
-    el 
-        set shiftwidth=4
-        set expandtab
-    en
-endf
+set list
 
 set wildmode=list:longest
 
-au BufRead,BufNewFile * call Select_expandtab()
+set softtabstop=4
+set tabstop=4
+set shiftwidth=4
+
 au BufRead,BufNewFile Makefile* set noexpandtab
+
+let g:detectindent_preferred_expandtab = 0
+let g:detectindent_preferred_indent = 4
+
+autocmd BufReadPost * :DetectIndent 
 
 colorscheme evening
 
