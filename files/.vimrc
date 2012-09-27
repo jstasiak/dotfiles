@@ -1,6 +1,12 @@
 set nocompatible
+
+" some plugins don't work with filetype is on during loading time
+filetype off
+
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
+
+filetype plugin indent on
 
 "allow to put buffer in the background without writing content to disk
 set hidden
@@ -31,7 +37,6 @@ set encoding=utf-8
 let python_highlight_all=1
 syntax on
 
-filetype plugin indent on
 
 autocmd FileType python set omnifunc=pythoncomplete#Complete
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
