@@ -14,6 +14,10 @@ call pathogen#helptags()
 
 filetype plugin indent on
 
+" Keep selection after shifting
+vnoremap > >gv
+vnoremap < <gv
+
 "allow to put buffer in the background without writing content to disk
 set hidden
 set pastetoggle=<F2>
