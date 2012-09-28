@@ -1,4 +1,10 @@
 set nocompatible
+let mapleader=","
+
+
+" Quickly edit/reload the vimrc file
+nmap <silent> <leader>ev :e $MYVIMRC<CR>
+nmap <silent> <leader>sv :so $MYVIMRC<CR>
 
 " some plugins don't work with filetype is on during loading time
 filetype off
@@ -20,6 +26,19 @@ set wildmode=list:longest
 set softtabstop=4
 set tabstop=4
 set shiftwidth=4
+
+
+set undolevels=1000      " use many muchos levels of undo
+set wildignore=*.swp,*.bak,*.pyc,*.class
+set title                " change the terminal's title
+set visualbell           " don't beep
+set noerrorbells         " don't beep
+
+set nobackup
+set noswapfile
+
+" saves some keystrokes!
+nnoremap ; :
 
 au BufRead,BufNewFile Makefile* set noexpandtab
 
