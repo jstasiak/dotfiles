@@ -4,14 +4,21 @@
 
 [alias]
     st = status
+
+    df = diff
+    ds = diff --staged
+
     ci = commit
-    lp = log -p
-    br = branch -a
+    cia = commit --amend
+
+    br = branch
+    bra = branch -a
+
     lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cd) %C(bold blue)<%an>%Creset' --abbrev-commit
     lga = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cd) %C(bold blue)<%an>%Creset' --abbrev-commit --all
-    ll = log --graph --format=medium
-    lc = log ORIG_HEAD.. --stat --no-merges
-    ds = diff --staged
+    lgm = log --graph --format=medium
+    lp = log -p
+
     co = checkout
 
 [log]
