@@ -73,6 +73,9 @@ set completeopt+=longest
 set ignorecase
 set smartcase
 
+set smartindent
+set smarttab
+
 
 " highlighted and incremental search
 set hlsearch
