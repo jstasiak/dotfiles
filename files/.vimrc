@@ -1,18 +1,33 @@
+" This stuff has to be above pathgen bundle loading because it
+" affects loaded bundles
+" ============================================================
+"
 set nocompatible
+
+" this is easier to use than default leader "\"
 let mapleader=","
 
 
-" Quickly edit/reload the vimrc file
-nmap <silent> <leader>ev :e $MYVIMRC<CR>
-nmap <silent> <leader>sv :so $MYVIMRC<CR>
-
 " some plugins don't work with filetype is on during loading time
 filetype off
+
 
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
 filetype plugin indent on
+
+
+" gnome-terminal doesn't advertise it's support for 256 colors
+" so we have to help Vim a bit
+if $COLORTERM == 'gnome-terminal'
+    set t_Co=256
+endif
+
+
+" Quickly edit/reload the vimrc file
+nmap <silent> <leader>ev :e $MYVIMRC<CR>
+nmap <silent> <leader>sv :so $MYVIMRC<CR>
 
 " Keep selection after shifting
 vnoremap > >gv
@@ -51,7 +66,7 @@ let g:detectindent_preferred_indent = 4
 
 autocmd BufReadPost * :DetectIndent 
 
-colorscheme evening
+colorscheme wombat256mod
 
 "highlight BadWhitespace ctermbg=red guibg=red
 au BufNewFile * set fileformat=unix
