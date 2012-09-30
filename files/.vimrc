@@ -170,3 +170,6 @@ let g:ctrlp_cmd = 'CtrlP'
 let g:syntastic_python_checker='pyflakes'
 let g:syntastic_check_on_open=1
 let g:syntastic_enable_signs=0
+
+" Ack
+nnoremap <leader>a :Ack 
