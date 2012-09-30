@@ -74,7 +74,7 @@ set encoding=utf-8
 
 let python_highlight_all=1
 syntax on
-
+		
 
 autocmd FileType python set omnifunc=pythoncomplete#Complete
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
@@ -83,18 +83,8 @@ autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 
 set completeopt+=longest
 
-
-" Case sensitive search only when uppercase letter present in search string
-set ignorecase
-set smartcase
-
 set smartindent
 set smarttab
-
-
-" highlighted and incremental search
-set hlsearch
-set incsearch
 
 " Set terminal title
 set title
@@ -110,7 +100,7 @@ nnoremap <C-e> 3<C-e>
 nnoremap <C-y> 3<C-y>
 
 " toggle visible whitespace by <leader>s
-set listchars=tab:>-,trail:·
+set listchars=tab:>\ ,eol:¬,trail:·
 nmap <silent> <leader>s :set nolist!<CR>
 
 " intuitive backspace
@@ -129,6 +119,43 @@ vmap <C-c> y: call system("xclip -i -selection clipboard", getreg("\""))<CR>
 nmap <C-v> :call setreg("\"",system("xclip -o -selection clipboard"))<CR>p
 
 set visualbell
+
+
+"
+" Searching/moving
+"
+
+
+" Turn off Vim default regexp characters and use Perl/Python regular
+" expressions instead
+nnoremap / /\v
+vnoremap / /\v
+
+
+" Case sensitive search only when uppercase letter present in search string
+set ignorecase
+set smartcase
+
+" Apply substitutions globally by default (without /g at the end)
+set gdefault
+
+
+" highlight found patterns
+set hlsearch
+
+" incremental search
+set incsearch
+
+" get rid of highlighting left after last search
+nnoremap <leader><space> :noh<cr>
+
+" move between matching parenthesis using tab
+nnoremap <tab> %
+vnoremap <tab> %
+
+" movement by screen line instead of by file line
+nnoremap j gj
+nnoremap k gk
 
 " 
 " Plugins configuration
