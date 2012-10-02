@@ -69,7 +69,7 @@ nnoremap <C-e> 3<C-e>
 nnoremap <C-y> 3<C-y>
 
 " toggle visible whitespace by <leader>s
-set listchars=tab:>-,trail:·,eol:$
+set listchars=tab:>-,trail:·
 nmap <silent> <leader>s :set nolist!<CR>
 
 " intuitive backspace
@@ -90,5 +90,5 @@ nmap <C-v> :call setreg("\"",system("xclip -o -selection clipboard"))<CR>p
 set visualbell
 
 
-map <F10> :NERDTreeToggle<CR>
-
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
