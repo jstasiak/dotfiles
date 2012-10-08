@@ -10,3 +10,6 @@
 [submodule "files/.vim/bundle/snipmate-snippets"]
 	path = files/.vim/bundle/snipmate-snippets
 	url = git://github.com/honza/snipmate-snippets.git
+[submodule "files/.vim/bundle/syntastic"]
+	path = files/.vim/bundle/syntastic
+	url = https://github.com/scrooloose/syntastic.git

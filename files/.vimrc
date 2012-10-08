@@ -130,6 +130,16 @@ nmap <C-v> :call setreg("\"",system("xclip -o -selection clipboard"))<CR>p
 
 set visualbell
 
+" 
+" Plugins configuration
+" 
 
+
+" CtrlP
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
+
+" Syntastic
+let g:syntastic_python_checker='pyflakes'
+let g:syntastic_check_on_open=1
+let g:syntastic_enable_signs=0
