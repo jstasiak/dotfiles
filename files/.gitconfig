@@ -9,7 +9,9 @@
     ds = diff --staged
 
     ci = commit
-    cia = commit --amend
+    cia = commit --all
+    ciaa = commit --all --amend
+    ciam = commit --amend
 
     br = branch
     bra = branch -a
@@ -20,6 +22,9 @@
     lp = log -p
 
     co = checkout
+
+    su = submodule update
+    sui = submodule update --init
 
 [log]
     date = iso
