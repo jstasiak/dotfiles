@@ -8,6 +8,12 @@ set nocompatible
 let mapleader=","
 
 
+" GUI-related options
+if has("gui_running")
+    set guifont=Inconsolata\ 10
+endif
+
+
 " some plugins don't work with filetype is on during loading time
 filetype off
 
