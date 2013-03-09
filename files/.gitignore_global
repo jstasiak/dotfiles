@@ -93,3 +93,4 @@ UpgradeLog*.XML
 *.un~
 Session.vim
 
+.DS_Store
