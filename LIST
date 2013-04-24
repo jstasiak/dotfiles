@@ -1,8 +1,0 @@
-.gitconfig
-.gitignore_global
-.vim/
-.vimrc
-.zshrc
-.screenrc
-.pythonrc.py
-local/
