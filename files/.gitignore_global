@@ -94,3 +94,6 @@ UpgradeLog*.XML
 Session.vim
 
 .DS_Store
+
+.travis-solo/
+*.pyc
