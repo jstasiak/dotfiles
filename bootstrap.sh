@@ -18,7 +18,8 @@ install_osx_prerequisites() {
     ensure_homebrew && \
     brew update && \
     brew upgrade && \
-    brew install cmake git zsh mc netcat nmap macvim htop && \
+    brew install cmake git zsh mc netcat nmap htop && \
+    brew install macvim --override-system-vim && \
     brew linkapps
 }
 
