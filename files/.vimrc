@@ -179,3 +179,9 @@ let g:syntastic_enable_signs=0
 
 " Ack
 nnoremap <leader>a :Ack 
+
+"remove gVim menu bar
+:set guioptions-=m
+
+"remove gVim toolbar
+:set guioptions-=T
