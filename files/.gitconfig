@@ -47,6 +47,3 @@
 
 [rerere]
     enabled = 1
-
-[push]
-    default = simple
