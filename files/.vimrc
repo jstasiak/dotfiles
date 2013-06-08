@@ -71,6 +71,7 @@ let g:detectindent_preferred_expandtab = 0
 let g:detectindent_preferred_indent = 4
 
 autocmd BufReadPost * :DetectIndent 
+autocmd BufReadPost * :set tabstop=4
 
 colorscheme wombat256mod
 
