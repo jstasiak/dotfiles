@@ -185,6 +185,8 @@ let g:syntastic_echo_current_error=1
 " syntastic_echo_current_error=1 and there's a lot of errors in a file
 " lazyredraw helps to mitigate it
 set lazyredraw
+set nocursorline
+set nocursorcolumn
 
 " Ack
 nnoremap <leader>a :Ack 
