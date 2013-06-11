@@ -26,7 +26,7 @@ if ls --color -d . &>/dev/null 2>&1; then
 else
   # BSD
   export LSCOLORS=$LSCOLORS
-  alias ls='ls -G'
+  alias ls='ls -GF'
 fi
 
 
@@ -65,6 +65,8 @@ if [[ $- == *i* ]]; then
     zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
     zstyle ':completion::complete:*' use-cache 1
     zstyle ':completion:*' menu select
+    zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' \
+        'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 
     setopt nobeep
     setopt list_packed
