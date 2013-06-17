@@ -176,7 +176,7 @@ let g:ctrlp_max_height = 40
 
 " Syntastic
 let g:syntastic_python_checkers=['flake8']
-let g:syntastic_python_flake8_args='--max-complexity=10 --max-line-length=110'
+let g:syntastic_python_flake8_args='--max-complexity=10 --max-line-length=110 --ignore=W191'
 let g:syntastic_check_on_open=1
 let g:syntastic_enable_signs=1
 let g:syntastic_echo_current_error=1
