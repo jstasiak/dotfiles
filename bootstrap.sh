@@ -32,8 +32,10 @@ ensure_pip() {
     wchich pip > /dev/null || curl https://raw.github.com/pypa/pip/master/contrib/get-pip.py | sudo python
 }
 
-(is_redhat && install_redhat_prerequisites) || \
-(is_osx && install_osx_prerequisites) || \
-(echo "Only OS X and Redhat/CentOS/Fedora supported at the moment" && exit 1)
-
+(
+    (is_redhat && install_redhat_prerequisites) || \
+    (is_osx && install_osx_prerequisites) || \
+    (echo "Only OS X and Redhat/CentOS/Fedora supported at the moment" && exit 1)
+) && \
+git submodule update --init && \
 ./activate.py
