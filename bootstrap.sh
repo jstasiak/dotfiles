@@ -15,6 +15,7 @@ is_osx() {
 }
 
 install_osx_prerequisites() {
+    mkdir -p ~/Applications && \
     ensure_homebrew && \
     brew update && \
     brew upgrade && \
