@@ -98,3 +98,5 @@ Session.vim
 .travis-solo/
 *.pyc
 *.egg-info/
+.tox/
+dist/
