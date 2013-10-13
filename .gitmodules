@@ -22,6 +22,3 @@
 [submodule "files/.vim/bundle/vim-python-pep8-indent"]
 	path = files/.vim/bundle/vim-python-pep8-indent
 	url = https://github.com/hynek/vim-python-pep8-indent.git
-[submodule "files/.vim/bundle/vim-elixir"]
-	path = files/.vim/bundle/vim-elixir
-	url = https://github.com/elixir-lang/vim-elixir.git
