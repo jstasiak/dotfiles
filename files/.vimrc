@@ -100,7 +100,7 @@ set title
 set number
 
 " scroll when x lines from top/bottom border
-set scrolloff=3
+set scrolloff=10
 
 " make scrolling the viewport faster
 nnoremap <C-e> 3<C-e>
