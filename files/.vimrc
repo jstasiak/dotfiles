@@ -173,6 +173,7 @@ nnoremap k gk
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_max_height = 40
+let g:ctrlp_max_files = 0
 
 " Syntastic
 let g:syntastic_python_checkers=['flake8']
