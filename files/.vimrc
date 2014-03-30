@@ -197,3 +197,27 @@ nnoremap <leader>a :Ack
 
 "remove gVim toolbar
 :set guioptions-=T
+
+
+
+"
+" Taken from OSCON 2013: "More Instantly Better Vim" - Damian Conway
+"
+"
+
+" This rewires n and N to do the highlighing...
+nnoremap <silent> n   n:call HLNext(0.1)<cr>
+nnoremap <silent> N   N:call HLNext(0.1)<cr>
+
+highlight WhiteOnRed guibg=red ctermbg=darkred
+
+function! HLNext (blinktime)
+    let [bufnum, lnum, col, off] = getpos('.')
+    let matchlen = strlen(matchstr(strpart(getline('.'),col-1),@/))
+    let target_pat = '\c\%#'.@/
+    let ring = matchadd('WhiteOnRed', target_pat, 101)
+    redraw
+    exec 'sleep ' . float2nr(a:blinktime * 1000) . 'm'
+    call matchdelete(ring)
+    redraw
+endfunction
