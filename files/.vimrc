@@ -121,10 +121,6 @@ if has('mouse')
 endif
 
 
-"http://vim.wikia.com/wiki/In_line_copy_and_paste_to_system_clipboard
-vmap <C-c> y: call system("xclip -i -selection clipboard", getreg("\""))<CR>
-nmap <C-v> :call setreg("\"",system("xclip -o -selection clipboard"))<CR>p
-
 set visualbell
 
 
