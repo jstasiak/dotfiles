@@ -100,3 +100,6 @@ Session.vim
 *.egg-info/
 .tox/
 dist/
+
+.cabal-sandbox/
+cabal.sandbox.config
