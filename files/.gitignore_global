@@ -103,3 +103,5 @@ dist/
 
 .cabal-sandbox/
 cabal.sandbox.config
+
+.coverage
