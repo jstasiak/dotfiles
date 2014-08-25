@@ -32,8 +32,8 @@ fi
 
 
 export HISTFILE=$HOME/.history
-export HISTSIZE=100000
-export SAVEHIST=100000
+export HISTSIZE=10000000
+export SAVEHIST=10000000
 
 export LANG=en_US.UTF-8
 export LC_CTYPE=en_US.UTF-8
