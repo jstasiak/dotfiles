@@ -34,3 +34,6 @@
 [submodule "files/.vim/bundle/vim-jinja2-syntax"]
 	path = files/.vim/bundle/vim-jinja2-syntax
 	url = https://github.com/Glench/Vim-Jinja2-Syntax.git
+[submodule "files/.vim/bundle/vimerl"]
+	path = files/.vim/bundle/vimerl
+	url = https://github.com/jimenezrick/vimerl.git
