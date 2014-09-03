@@ -37,3 +37,6 @@
 [submodule "files/.vim/bundle/vimerl"]
 	path = files/.vim/bundle/vimerl
 	url = https://github.com/jimenezrick/vimerl.git
+[submodule "files/.vim/bundle/vim-abolish"]
+	path = files/.vim/bundle/vim-abolish
+	url = https://github.com/tpope/vim-abolish.git
