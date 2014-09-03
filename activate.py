@@ -3,7 +3,7 @@ from __future__ import with_statement
 
 import errno
 
-from os import makedirs
+from os import makedirs, remove
 from os.path import abspath, dirname, expanduser, join, relpath
 from shutil import copyfile
 
@@ -17,6 +17,11 @@ def main():
     for root, directories, files in os.walk(FILES_ROOT):
         for f in files:
             activate_file(relpath(join(root, f), FILES_ROOT))
+    try:
+        remove(join(HOME, '.vim', 'bundle', 'vimerl', 'syntax', 'erlang.vim'))
+    except OSError as e:
+        if e.errno != errno.ENOENT:
+            raise
 
 def activate_file(rel_file):
     directory = dirname(rel_file)
