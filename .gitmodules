@@ -40,3 +40,6 @@
 [submodule "files/.vim/bundle/vim-abolish"]
 	path = files/.vim/bundle/vim-abolish
 	url = https://github.com/tpope/vim-abolish.git
+[submodule "files/.vim/bundle/vim-capnp"]
+	path = files/.vim/bundle/vim-capnp
+	url = https://github.com/cstrahan/vim-capnp.git
