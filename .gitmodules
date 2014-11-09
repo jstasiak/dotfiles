@@ -43,3 +43,6 @@
 [submodule "files/.vim/bundle/vim-capnp"]
 	path = files/.vim/bundle/vim-capnp
 	url = https://github.com/cstrahan/vim-capnp.git
+[submodule "files/.vim/bundle/vim-rust"]
+	path = files/.vim/bundle/vim-rust
+	url = https://github.com/wting/rust.vim.git
