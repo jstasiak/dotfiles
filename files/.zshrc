@@ -153,4 +153,17 @@ if [ -d "$LINUXBREWHOME" ]; then
     export LD_LIBRARY_PATH=$LINUXBREWHOME/lib64:$LINUXBREWHOME/lib:$LD_LIBRARY_PATH
 fi;
 
+LOCAL=$HOME/local
+LOCALBIN=$LOCAL/bin
+LOCALLIB=$LOCAL/lib
+
+if [ -d $LOCALBIN ]; then
+    export PATH=$LOCALBIN:$PATH
+fi;
+
+if [ -d $LOCALLIB ]; then
+    export DYLD_LIBRARY_PATH=$LOCALLIB:$DYLD_LIBRARY_PATH
+    export LD_LIBRARY_PATH=$LOCALLIB:$LD_LIBRARY_PATH
+fi;
+
 [[ -e ~/.profile ]] && source ~/.profile
