@@ -217,3 +217,8 @@ function! HLNext (blinktime)
     call matchdelete(ring)
     redraw
 endfunction
+
+
+if filereadable(glob("~/.vimrc.local")) 
+    source ~/.vimrc.local
+endif
