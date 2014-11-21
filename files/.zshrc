@@ -167,3 +167,4 @@ if [ -d $LOCALLIB ]; then
 fi;
 
 [[ -e ~/.profile ]] && source ~/.profile
+[[ -e ~/.zsh.local ]] && source ~/.zsh.local
