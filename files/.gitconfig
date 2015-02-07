@@ -32,6 +32,12 @@
     # Borrowed from http://stackoverflow.com/questions/9651898/is-there-a-git-sed-or-equivalent/9652183#9652183
     sed = ! git grep -z --full-name -l '.' | xargs -0 sed -i -e
 
+    # usage: git generate-github-fork-remote FORK_OWNER_NAME
+    generate-github-fork-remote = "! f() { git remote --verbose | grep origin | tr '\\n' ' ' | sed -E \"s/^.*(git@github\\.com:|https:\\/\\/github.com\\/)([^/]+)\\/([^/]+\\.git).*$/https:\\/\\/github.com\\/$1\\/\\3/\"; }; f"
+
+    # usage: git add-github-fork-remote FORK_OWNER_NAME
+    add-github-fork-remote = "! f() { git remote add $1 `git remote --verbose | grep origin | tr '\\n' ' ' | sed -E \"s/^.*(git@github\\.com:|https:\\/\\/github.com\\/)([^/]+)\\/([^/]+\\.git).*$/https:\\/\\/github.com\\/$1\\/\\3/\"`; }; f"
+
 [log]
     date = iso
 
