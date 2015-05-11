@@ -38,6 +38,8 @@
     # usage: git add-github-fork-remote FORK_OWNER_NAME
     add-github-fork-remote = "! f() { git remote add $1 `git remote --verbose | grep origin | tr '\\n' ' ' | sed -E \"s/^.*(git@github\\.com:|https:\\/\\/github.com\\/)([^/]+)\\/([^/]+\\.git).*$/https:\\/\\/github.com\\/$1\\/\\3/\"`; }; f"
 
+    all-files-ever = ! git log --pretty=format: --name-only --diff-filter=A --all | sort -u
+
 [log]
     date = iso
 
