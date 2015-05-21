@@ -22,9 +22,6 @@
 [submodule "files/.vim/bundle/vim-python-pep8-indent"]
 	path = files/.vim/bundle/vim-python-pep8-indent
 	url = https://github.com/hynek/vim-python-pep8-indent.git
-[submodule "files/.vim/bundle/ctrlp.vim"]
-	path = files/.vim/bundle/ctrlp.vim
-	url = https://github.com/kien/ctrlp.vim.git
 [submodule "files/.vim/bundle/rust.vim"]
 	path = files/.vim/bundle/rust.vim
 	url = git://github.com/wting/rust.vim.git
@@ -46,3 +43,6 @@
 [submodule "files/.vim/bundle/vim-toml"]
 	path = files/.vim/bundle/vim-toml
 	url = https://github.com/cespare/vim-toml.git
+[submodule "files/.vim/bundle/ctrlp.vim"]
+	path = files/.vim/bundle/ctrlp.vim
+	url = https://github.com/ctrlpvim/ctrlp.vim.git
