@@ -11,7 +11,6 @@ fi
 
 export TERM=xterm-256color
 
-export PIP_DOWNLOAD_CACHE="~/.pip_download_cache"
 export PROMPT='%{$fg['$COLOR']%}%n@%B%m%b%f%{$reset_color%} %{$fg[cyan]%}%*%{$reset_color%} ${vcs_info_msg_0_}%b%f%~%{$fg['$COLOR']%}%#%{$reset_color%} '
 export RPROMPT=''
 
