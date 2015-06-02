@@ -49,3 +49,6 @@
 [submodule "files/.vim/bundle/vim-fugitive"]
 	path = files/.vim/bundle/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive.git
+[submodule "files/.vim/bundle/tcomment.vim"]
+	path = files/.vim/bundle/tcomment.vim
+	url = https://github.com/tomtom/tcomment_vim.git
