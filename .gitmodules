@@ -52,3 +52,6 @@
 [submodule "files/.vim/bundle/tcomment.vim"]
 	path = files/.vim/bundle/tcomment.vim
 	url = https://github.com/tomtom/tcomment_vim.git
+[submodule "files/.vim/bundle/vim-ansible-yaml"]
+	path = files/.vim/bundle/vim-ansible-yaml
+	url = git://github.com/chase/vim-ansible-yaml.git
