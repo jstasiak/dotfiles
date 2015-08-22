@@ -55,3 +55,6 @@
 [submodule "files/.vim/bundle/vim-ansible-yaml"]
 	path = files/.vim/bundle/vim-ansible-yaml
 	url = git://github.com/chase/vim-ansible-yaml.git
+[submodule "files/.vim/bundle/slimv"]
+	path = files/.vim/bundle/slimv
+	url = https://github.com/kovisoft/slimv.git
