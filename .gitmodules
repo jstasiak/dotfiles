@@ -58,3 +58,6 @@
 [submodule "files/.vim/bundle/slimv"]
 	path = files/.vim/bundle/slimv
 	url = https://github.com/kovisoft/slimv.git
+[submodule "files/.vim/bundle/vim-go"]
+	path = files/.vim/bundle/vim-go
+	url = https://github.com/fatih/vim-go.git
