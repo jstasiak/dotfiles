@@ -61,3 +61,6 @@
 [submodule "files/.vim/bundle/vim-go"]
 	path = files/.vim/bundle/vim-go
 	url = https://github.com/fatih/vim-go.git
+[submodule "files/.vim/bundle/badwolf"]
+	path = files/.vim/bundle/badwolf
+	url = https://github.com/sjl/badwolf.git
