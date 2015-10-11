@@ -21,8 +21,6 @@ filetype off
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
-filetype plugin indent on
-
 
 " gnome-terminal doesn't advertise it's support for 256 colors
 " so we have to help Vim a bit
@@ -77,10 +75,8 @@ colorscheme wombat256mod
 
 "highlight BadWhitespace ctermbg=red guibg=red
 au BufNewFile * set fileformat=unix
-set encoding=utf-8
 
 let python_highlight_all=1
-syntax on
 		
 
 autocmd FileType python set omnifunc=pythoncomplete#Complete
@@ -91,7 +87,6 @@ autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 set completeopt+=longest
 
 set smartindent
-set smarttab
 
 " Set terminal title
 set title
@@ -107,14 +102,9 @@ nnoremap <C-e> 3<C-e>
 nnoremap <C-y> 3<C-y>
 
 " toggle visible whitespace by <leader>s
-set listchars=tab:>\ ,eol:¬,trail:·
 nmap <silent> <leader>s :set nolist!<CR>
 
-" intuitive backspace
-set backspace=indent,eol,start
-
 set cursorline
-set laststatus=2
 
 if has('mouse')
     set mouse=a
@@ -145,9 +135,6 @@ set gdefault
 
 " highlight found patterns
 set hlsearch
-
-" incremental search
-set incsearch
 
 " get rid of highlighting left after last search
 nnoremap <leader><space> :noh<cr>

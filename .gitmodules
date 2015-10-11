@@ -64,3 +64,6 @@
 [submodule "files/.vim/bundle/badwolf"]
 	path = files/.vim/bundle/badwolf
 	url = https://github.com/sjl/badwolf.git
+[submodule "files/.vim/bundle/vim-sensible"]
+	path = files/.vim/bundle/vim-sensible
+	url = git://github.com/tpope/vim-sensible.git
