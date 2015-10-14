@@ -71,7 +71,7 @@ let g:detectindent_preferred_indent = 4
 autocmd BufReadPost * :DetectIndent 
 autocmd BufReadPost * :set tabstop=4
 
-colorscheme wombat256mod
+colorscheme badwolf
 
 "highlight BadWhitespace ctermbg=red guibg=red
 au BufNewFile * set fileformat=unix
