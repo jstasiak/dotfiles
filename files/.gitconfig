@@ -30,7 +30,8 @@
     f = fetch
 
     # Borrowed from http://stackoverflow.com/questions/9651898/is-there-a-git-sed-or-equivalent/9652183#9652183
-    sed = ! git grep -z --full-name -l '.' | xargs -0 sed -i -e
+    # gsed has a priority because OS X's sed is not playing nicely here
+    sed = ! git grep -z --full-name -l '.' | xargs -0 `which gsed >/dev/null && echo gsed || echo sed` -i -e
 
     # usage: git generate-github-fork-remote FORK_OWNER_NAME
     generate-github-fork-remote = "! f() { git remote --verbose | grep origin | tr '\\n' ' ' | sed -E \"s/^.*(git@github\\.com:|https:\\/\\/github.com\\/)([^/]+)\\/([^/]+\\.git).*$/https:\\/\\/github.com\\/$1\\/\\3/\"; }; f"
