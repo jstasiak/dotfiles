@@ -105,3 +105,7 @@ dist/
 cabal.sandbox.config
 
 .coverage
+
+# Erlang stuff
+.rebar/
+.eunit/
