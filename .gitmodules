@@ -7,9 +7,6 @@
 [submodule "files/.vim/bundle/tlib_vim"]
 	path = files/.vim/bundle/tlib_vim
 	url = git://github.com/tomtom/tlib_vim.git
-[submodule "files/.vim/bundle/syntastic"]
-	path = files/.vim/bundle/syntastic
-	url = https://github.com/scrooloose/syntastic.git
 [submodule "files/.vim/bundle/ack.vim"]
 	path = files/.vim/bundle/ack.vim
 	url = git://github.com/mileszs/ack.vim.git
@@ -70,3 +67,6 @@
 [submodule "files/.vim/bundle/vim-swift"]
 	path = files/.vim/bundle/vim-swift
 	url = https://github.com/kballard/vim-swift.git
+[submodule "files/.vim/bundle/neomake"]
+	path = files/.vim/bundle/neomake
+	url = https://github.com/benekastah/neomake.git

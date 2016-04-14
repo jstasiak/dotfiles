@@ -159,16 +159,13 @@ let g:ctrlp_max_height = 40
 let g:ctrlp_max_files = 0
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
 
-" Syntastic
-let g:syntastic_python_checkers=['flake8']
-let g:syntastic_python_flake8_args='--max-complexity=10 --max-line-length=110 --ignore=W191'
-let g:syntastic_check_on_open=1
-let g:syntastic_enable_signs=1
-let g:syntastic_echo_current_error=1
+let g:neomake_python_enabled_makers = ['flake8']
+autocmd! BufWritePost * Neomake
+" Opens list of errors automatically if there are any
+let g:neomake_open_list = 2
 
-" Syntastic makes scrolling line by line very slow when synstatic_enable_signs=1,
-" syntastic_echo_current_error=1 and there's a lot of errors in a file
-" lazyredraw helps to mitigate it
+" Some plugins that display signs on the margins can make scrolling line by
+" line very slow. lazyredraw helps to mitigate it
 set lazyredraw
 set nocursorline
 set nocursorcolumn
