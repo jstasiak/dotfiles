@@ -152,6 +152,9 @@ if [ -d "$LINUXBREWHOME" ]; then
     export LD_LIBRARY_PATH=$LINUXBREWHOME/lib64:$LINUXBREWHOME/lib:$LD_LIBRARY_PATH
 fi;
 
+# https://github.com/Homebrew/brew/blob/master/share/doc/homebrew/Analytics.md#opting-out
+export HOMEBREW_NO_ANALYTICS=1
+
 LOCAL=$HOME/local
 LOCALBIN=$LOCAL/bin
 LOCALLIB=$LOCAL/lib
