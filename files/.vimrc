@@ -22,7 +22,7 @@ call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
 
-" gnome-terminal doesn't advertise it's support for 256 colors
+" gnome-terminal doesn't advertise its support for 256 colors
 " so we have to help Vim a bit
 if $COLORTERM == 'gnome-terminal'
     set t_Co=256
