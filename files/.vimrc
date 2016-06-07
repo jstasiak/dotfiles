@@ -180,6 +180,14 @@ nnoremap <leader>a :Ack
 :set guioptions-=T
 
 
+" This needs to be here so that we can override ttimeout below
+" More: https://github.com/tpope/vim-sensible/issues/88#issuecomment-67413355
+runtime! plugin/sensible.vim
+" Improves Neovim's behaviour when presented with fast input
+" More information: https://github.com/neovim/neovim/issues/2454
+if has('nvim')
+    set nottimeout
+endif
 
 "
 " Taken from OSCON 2013: "More Instantly Better Vim" - Damian Conway
