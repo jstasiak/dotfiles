@@ -65,3 +65,8 @@
 
 [push]
     default = upstream
+
+
+[commit]
+    # Includes diff in commit message template context
+    verbose = true
