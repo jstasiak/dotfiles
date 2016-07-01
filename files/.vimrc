@@ -173,6 +173,12 @@ set nocursorcolumn
 " Ack
 nnoremap <leader>a :Ack 
 
+" ack.vim seems to be able to use ag and ag seems to be faster than Ack so
+" no reason to not use it if it's available
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep'
+endif
+
 "remove gVim menu bar
 :set guioptions-=m
 
