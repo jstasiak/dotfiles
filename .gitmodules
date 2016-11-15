@@ -25,9 +25,6 @@
 [submodule "files/.vim/bundle/vim-jinja2-syntax"]
 	path = files/.vim/bundle/vim-jinja2-syntax
 	url = https://github.com/Glench/Vim-Jinja2-Syntax.git
-[submodule "files/.vim/bundle/vimerl"]
-	path = files/.vim/bundle/vimerl
-	url = https://github.com/jimenezrick/vimerl.git
 [submodule "files/.vim/bundle/vim-abolish"]
 	path = files/.vim/bundle/vim-abolish
 	url = https://github.com/tpope/vim-abolish.git
@@ -37,9 +34,6 @@
 [submodule "files/.vim/bundle/vim-rust"]
 	path = files/.vim/bundle/vim-rust
 	url = https://github.com/wting/rust.vim.git
-[submodule "files/.vim/bundle/vim-toml"]
-	path = files/.vim/bundle/vim-toml
-	url = https://github.com/cespare/vim-toml.git
 [submodule "files/.vim/bundle/ctrlp.vim"]
 	path = files/.vim/bundle/ctrlp.vim
 	url = https://github.com/ctrlpvim/ctrlp.vim.git
@@ -52,24 +46,12 @@
 [submodule "files/.vim/bundle/vim-ansible-yaml"]
 	path = files/.vim/bundle/vim-ansible-yaml
 	url = git://github.com/chase/vim-ansible-yaml.git
-[submodule "files/.vim/bundle/slimv"]
-	path = files/.vim/bundle/slimv
-	url = https://github.com/kovisoft/slimv.git
-[submodule "files/.vim/bundle/vim-go"]
-	path = files/.vim/bundle/vim-go
-	url = https://github.com/fatih/vim-go.git
 [submodule "files/.vim/bundle/badwolf"]
 	path = files/.vim/bundle/badwolf
 	url = https://github.com/sjl/badwolf.git
 [submodule "files/.vim/bundle/vim-sensible"]
 	path = files/.vim/bundle/vim-sensible
 	url = git://github.com/tpope/vim-sensible.git
-[submodule "files/.vim/bundle/vim-swift"]
-	path = files/.vim/bundle/vim-swift
-	url = https://github.com/kballard/vim-swift.git
 [submodule "files/.vim/bundle/neomake"]
 	path = files/.vim/bundle/neomake
 	url = https://github.com/benekastah/neomake.git
-[submodule "files/.vim/bundle/vim-thrift"]
-	path = files/.vim/bundle/vim-thrift
-	url = https://github.com/tclh123/vim-thrift.git
