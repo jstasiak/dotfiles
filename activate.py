@@ -6,6 +6,7 @@ import errno
 from os import makedirs, readlink, remove, symlink
 from os.path import abspath, dirname, expanduser, islink, join, relpath
 from shutil import copyfile
+from subprocess import check_call
 
 import os
 

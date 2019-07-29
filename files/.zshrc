@@ -155,6 +155,11 @@ fi;
 # https://github.com/Homebrew/brew/blob/master/share/doc/homebrew/Analytics.md#opting-out
 export HOMEBREW_NO_ANALYTICS=1
 
+# https://github.com/kennethreitz/pipenv/pull/395
+export PIPENV_IGNORE_VIRTUALENVS=1
+
+export PIPENV_SHELL_COMPAT=1
+
 LOCAL=$HOME/local
 LOCALBIN=$LOCAL/bin
 LOCALLIB=$LOCAL/lib
@@ -168,5 +173,9 @@ if [ -d $LOCALLIB ]; then
     export LD_LIBRARY_PATH=$LOCALLIB:$LD_LIBRARY_PATH
 fi;
 
+which nvim > /dev/null && export EDITOR=nvim;
+alias vim=nvim;
+
 [[ -e ~/.profile ]] && source ~/.profile
 [[ -e ~/.zsh.local ]] && source ~/.zsh.local
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

@@ -53,6 +53,10 @@
     autocrlf = input
     editor = vim
     excludesfile = ~/.gitignore_global
+    abbrev = 12
+
+[pretty]
+        fixes = Fixes: %h (\"%s\")
 
 [apply]
     whitespace = nowarn
@@ -62,10 +66,6 @@
 
 [rerere]
     enabled = 1
-
-[push]
-    default = upstream
-
 
 [commit]
     # Includes diff in commit message template context
