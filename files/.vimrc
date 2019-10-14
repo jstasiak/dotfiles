@@ -83,7 +83,7 @@ set noswapfile
 
 " saves some keystrokes!
 nnoremap ; :
-
+set expandtab
 au BufRead,BufNewFile Makefile* set noexpandtab
 
 colorscheme badwolf
