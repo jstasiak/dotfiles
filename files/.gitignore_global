@@ -109,3 +109,5 @@ cabal.sandbox.config
 # Erlang stuff
 .rebar/
 .eunit/
+
+.mypy_cache/
