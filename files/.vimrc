@@ -38,8 +38,11 @@ Plug 'rust-lang/rust.vim'
 " Plug 'roxma/vim-hug-neovim-rpc'
 Plug 'hynek/vim-python-pep8-indent'
 Plug 'tpope/vim-sensible'
+Plug 'vimwiki/vimwiki'
 
 call plug#end()
+
+let g:vimwiki_list = [{'path': '~/Sync/vimwiki', 'syntax': 'markdown', 'ext': '.md'}]
 
 
 " gnome-terminal doesn't advertise its support for 256 colors
