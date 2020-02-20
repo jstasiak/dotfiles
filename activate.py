@@ -35,11 +35,6 @@ def main():
             for d in directories:
                 if islink(join(root, d)):
                     activate(d)
-    try:
-        remove(join(HOME, '.vim', 'bundle', 'vimerl', 'syntax', 'erlang.vim'))
-    except OSError as e:
-        if e.errno != errno.ENOENT:
-            raise
 
 def activate_file(rel_file):
     directory = dirname(rel_file)
