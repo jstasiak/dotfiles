@@ -51,3 +51,7 @@ defaults write -g ApplePressAndHoldEnabled -bool false
 
 brew install fzf
 /usr/local/opt/fzf/install
+
+
+# Don't read/write DS_Store files on SMB shares
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool TRUE
