@@ -218,7 +218,7 @@ endif
 
 
 let g:LanguageClient_serverCommands = {
-    \ 'rust': ['rls'],
+    \ 'rust': ['~/.cargo/bin/rls'],
     \ }
 
 nnoremap <F5> :call LanguageClient_contextMenu()<CR>
