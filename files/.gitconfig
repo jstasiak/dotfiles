@@ -28,6 +28,7 @@
 
     pom = push origin master
     f = fetch
+    fa = fetch --all
 
     # Borrowed from http://stackoverflow.com/questions/9651898/is-there-a-git-sed-or-equivalent/9652183#9652183
     # gsed has a priority because OS X's sed is not playing nicely here
