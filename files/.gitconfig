@@ -27,6 +27,7 @@
     sui = submodule update --init
 
     pom = push origin master
+    pf = push --force
     f = fetch
     fa = fetch --all
 
@@ -71,3 +72,6 @@
 [commit]
     # Includes diff in commit message template context
     verbose = true
+
+[push]
+default = current
