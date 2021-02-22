@@ -22,6 +22,7 @@
     lp = log -p
 
     co = checkout
+    cp = cherry-pick
 
     su = submodule update
     sui = submodule update --init
