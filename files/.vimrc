@@ -30,6 +30,7 @@ Plug 'sjl/badwolf'
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'benekastah/neomake'
+Plug 'psf/black', { 'branch': 'stable' }
 " Plug 'roxma/nvim-yarp'
 Plug 'rust-lang/rust.vim'
 " Plug 'tomtom/tcomment_vim'
@@ -171,6 +172,9 @@ nnoremap k gk
 " Plugins configuration
 " 
 
+" Black
+nnoremap <C-q> :Black<cr>
+let g:python3_host_prog = $HOME . '/.ve310/bin/python'
 
 " CtrlP
 " let g:ctrlp_map = '<c-p>'
