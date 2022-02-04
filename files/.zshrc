@@ -176,6 +176,14 @@ fi;
 which nvim > /dev/null && export EDITOR=nvim;
 alias vim=nvim;
 
+function git-delete-branches() {
+    git branch |
+        grep --invert-match '\*' |
+        cut -c 3- |
+        fzf --multi --preview="git log {} --" |
+        xargs git branch --delete --force
+}
+
 [[ -e ~/.profile ]] && source ~/.profile
 [[ -e ~/.zsh.local ]] && source ~/.zsh.local
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
