@@ -57,6 +57,7 @@
     editor = vim
     excludesfile = ~/.gitignore_global
     abbrev = 12
+    pager = delta
 
 [pretty]
         fixes = Fixes: %h (\"%s\")
@@ -76,3 +77,18 @@
 
 [push]
 default = current
+
+[interactive]
+    diffFilter = delta --color-only
+
+[delta]
+    # use n and N to move between diff sections
+    navigate = true
+
+    light = false
+
+[merge]
+    conflictstyle = diff3
+
+[diff]
+    colorMoved = default
