@@ -44,8 +44,6 @@ export LC_MESSAGES=en_US.UTF-8
 export PERL_BADLANG=0
 unset LC_ALL
 
-export PYTHONSTARTUP=$HOME/.pythonrc.py
-
 path=(~/bin /usr/local/sbin /usr/local/bin /bin /sbin /usr/bin /usr/sbin $path)
 typeset -U path
 
