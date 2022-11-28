@@ -20,6 +20,7 @@
     lga = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cd) %C(bold blue)<%an>%Creset' --abbrev-commit --all
     lgm = log --graph --format=medium
     lp = log -p
+    lpf = log -p --pretty=fixes
 
     co = checkout
     cp = cherry-pick
